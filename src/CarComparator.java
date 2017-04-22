@@ -3,7 +3,7 @@
  */
 public class CarComparator {
     //static Car polonez;
-    public static void main(String args[]){
+    public static void main(String[] args){
         Car audi=new Car();
         audi.brand = "Audi";
         audi.model = "A4";

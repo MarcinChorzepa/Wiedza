@@ -2,7 +2,7 @@
  * Created by Marcin on 21.04.2017.
  */
 public class CarShop {
-    public static void main(String args[]){
+    public static void main(String[] args){
         String carBrand="Audi";
         String carModel="A4";
         int carYear=2017;

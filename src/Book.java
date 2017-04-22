@@ -17,7 +17,9 @@ public class Book {
         isbn=bookIsbn;
 
     }
-
+Book(Book book){
+        this(book.title,book.author,book.releseDate,book.pages,book.publisher,book.isbn);
+}
     void printInfo() {
         String info = title + "; " + author + "; " + releseDate + "; " + pages + "; " + publisher
                 + "; " + isbn;

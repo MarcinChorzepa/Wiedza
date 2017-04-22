@@ -4,7 +4,7 @@ import java.util.Random;
  * Created by Marcin on 21.04.2017.
  */
 public class OperacjeNaZmiennych {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Random rand=new Random();
         int x=rand.nextInt(10);
         int y= new Random().nextInt(10);

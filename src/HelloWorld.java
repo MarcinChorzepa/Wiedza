@@ -2,7 +2,7 @@
  * Created by Marcin on 21.04.2017.
  */
 public class HelloWorld {
-    public static void main(String args[]){
+    public static void main(String[] args){
         int x;
  int wiek=25;
  boolean pr=true;

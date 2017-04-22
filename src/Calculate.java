@@ -2,7 +2,7 @@
  * Created by Marcin on 22.04.2017.
  */
 public class Calculate {
-    public static  void main(String args[]){
+    public static  void main(String[] args){
         Calculator calc=new Calculator();
         double x=4.25;
         double y=2.4;

@@ -8,4 +8,5 @@ public class Car {
     String tiresColor;
     String brand;
     String model;
+
 }

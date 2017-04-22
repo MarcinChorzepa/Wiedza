@@ -2,7 +2,7 @@
  * Created by Marcin on 22.04.2017.
  */
 public class Company {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Employee emp1=new Employee();
         Employee emp2=new Employee();
         Employee emp3=new Employee();

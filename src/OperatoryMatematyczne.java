@@ -2,7 +2,7 @@
  * Created by Marcin on 21.04.2017.
  */
 public class OperatoryMatematyczne {
-    public static void main(String args[]){
+    public static void main(String[] args){
         int x=10;
         int y=4;
         int sum=x+y;

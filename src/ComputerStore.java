@@ -2,7 +2,7 @@
  * Created by Marcin on 22.04.2017.
  */
 public class ComputerStore {
-    public static void main(String args[]){
+    public static void main(String[] args){
        /*
         Computer comp1=new Computer();
         comp1.processor="Intel i5";

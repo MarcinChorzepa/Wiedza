@@ -2,7 +2,7 @@
  * Created by Marcin on 21.04.2017.
  */
 public class Konwersje {
-    public static void main(String args[]){
+    public static void main(String[] args){
         double number1=10.987;
         int number2=5;
 

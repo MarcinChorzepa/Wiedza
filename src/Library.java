@@ -2,7 +2,7 @@
  * Created by Marcin on 21.04.2017.
  */
 public class Library {
-    public static void main(String args[]){
+    public static void main(String[] args){
         final String appName="Biblioteka v0.1";
      /**
        String title="W pustyni i w puszczy";

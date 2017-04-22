@@ -2,7 +2,7 @@
  * Created by Marcin on 21.04.2017.
  */
 public class OperatorySkrocone {
-    public static void main(String argsp[]){
+    public static void main(String[] args){
         int x=10;
         x+=5;
         System.out.println(x);
