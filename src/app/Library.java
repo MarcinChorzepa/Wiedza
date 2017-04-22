@@ -1,3 +1,8 @@
+package app;
+
+
+import data.Book;
+
 /**
  * Created by Marcin on 21.04.2017.
  */
@@ -25,6 +30,7 @@ public class Library {
        Book book2=new Book("Java","Genod Hazn",2013,1000,"Greg","5454666666");
        Book book3=new Book("SUN","Adam Mickiewicz",2000,45,"Greg","9989988888");
 
+Book book4=new Book(book1);
 
 
   /*
@@ -41,6 +47,7 @@ public class Library {
        book1.printInfo();
        book2.printInfo();
        book3.printInfo();
+       book4.printInfo();
        /*
        w klasie Book jest już procedura do wyświetlanie informacji o książce
         System.out.println( book1.title);
