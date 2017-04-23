@@ -1,13 +1,49 @@
-package app;
+package data;
 
 
 import data.Book;
+import utils.DataReader;
 
 /**
  * Created by Marcin on 21.04.2017.
  */
 public class Library {
-    public static void main(String[] args){
+    public static final int MAX_BOOKS = 1000;
+    private Book[] books;
+    private int booksNumber;
+
+    public Library() {
+        books = new Book[MAX_BOOKS];
+    }
+
+    public Book[] getBooks() {
+        return books;
+    }
+
+    public int getBooksNumber() {
+        return booksNumber;
+    }
+
+    public void addBook(Book book) {
+        if (booksNumber < MAX_BOOKS) {
+            books[booksNumber] = book;
+            booksNumber++;
+        } else {
+            System.out.println("Maxymalna liczba książek została osiągnięta");
+        }
+    }
+
+    public void printBooks() {
+        if (booksNumber == 0) {
+            System.out.println("Brak książek w bibliotece");
+        } else {
+            for (int i = 0; i < booksNumber; i++) {
+                books[i].printInfo();
+            }
+        }
+    }
+
+   /* public static void main(String[] args){
         final String appName="Biblioteka v0.1";
      /**
        String title="W pustyni i w puszczy";
@@ -25,12 +61,23 @@ public class Library {
         System.out.println(publisher);
         System.out.println(isbn);
 */
+/*Book[] books=new Book[1000];
+        DataReader dataReader=new DataReader();
 
+         books[0]=new Book("W pustyni i w puszczy","Henryk Sienkiewicz",2010,296,"Greg","654654654654");
+         books[1]=new Book("Java","Genod Hazn",2013,1000,"Greg","5454666666");
+         books[2]=new Book("SUN","Adam Mickiewicz",2000,45,"Greg","9989988888");
+        books[3]=new Book(books[0]);
+        System.out.println("Wprowadź nową książkę");
+        books[4]=dataReader.readAndCreateBook();
+        dataReader.close();
+         /*Zamieniam to na tablice
      Book book1=new Book("W pustyni i w puszczy","Henryk Sienkiewicz",2010,296,"Greg","654654654654");
        Book book2=new Book("Java","Genod Hazn",2013,1000,"Greg","5454666666");
        Book book3=new Book("SUN","Adam Mickiewicz",2000,45,"Greg","9989988888");
 
 Book book4=new Book(book1);
+*/
 
 
   /*
@@ -42,12 +89,13 @@ Book book4=new Book(book1);
      book1.publisher="Greg";
      book1.isbn="546581236135";
 **/
-        System.out.print(appName);
+   /*     System.out.print(appName);
         System.out.println("Książki dostępne w bibliotece");
-       book1.printInfo();
-       book2.printInfo();
-       book3.printInfo();
-       book4.printInfo();
+       books[0].printInfo();
+       books[1].printInfo();
+       books[2].printInfo();
+       books[3].printInfo();
+       books[4].printInfo();
        /*
        w klasie Book jest już procedura do wyświetlanie informacji o książce
         System.out.println( book1.title);
@@ -57,5 +105,6 @@ Book book4=new Book(book1);
         System.out.println( book1.publisher);
         System.out.println( book1.isbn);
 **/
-    }
+//}  */
+
 }
