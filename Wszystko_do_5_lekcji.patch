@@ -1,0 +1,824 @@
+Index: src/OperatoryLogiczne.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/OperatoryLogiczne.java	(revision )
++++ src/OperatoryLogiczne.java	(revision )
+@@ -0,0 +1,27 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class OperatoryLogiczne {
++    public static void main(String args[]){
++        int x=5;
++        int y=10;
++        boolean logic=true;
++
++        System.out.print("x<10 && y<11? ");
++        System.out.println(x<10 && y<11);
++
++        System.out.print("x<10 && y<10? ");
++        System.out.println(x<10 && y<10);
++
++        System.out.print("x<10 || y<10? ");
++        System.out.println(x<10 || y<10);
++
++        System.out.print(logic);
++        System.out.print(" , !logic = ");
++        System.out.println(!logic);
++
++        System.out.print("Warunek złożony !(x<10 && y<10) ");
++        System.out.println(!(x<10 && y<10));
++
++    }
++}
+Index: src/HelloWorld.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/HelloWorld.java	(revision 0831d079a73689a19d4b384c1cb1fa97eacb55f0)
++++ src/HelloWorld.java	(revision )
+@@ -3,7 +3,15 @@
+  */
+ public class HelloWorld {
+     public static void main(String args[]){
++        int x;
++ int wiek=25;
++ boolean pr=true;
++ char im='J';
++ char nz='K';
++ String tresc="Czesc Jan , słyszałem , że masz " + wiek + " i uczysz się programować, czy to \n prawda?";
++ tresc=tresc+pr + "\n" + "Czy twoje inicjały to " + im+nz +"? \n";
++ tresc=tresc+"Tak," + pr;
+ 
+-        System.out.print("Hello world");
++        System.out.print(tresc);
+     }
+ }
+Index: src/OperatorySkrocone.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/OperatorySkrocone.java	(revision )
++++ src/OperatorySkrocone.java	(revision )
+@@ -0,0 +1,23 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class OperatorySkrocone {
++    public static void main(String argsp[]){
++        int x=10;
++        x+=5;
++        System.out.println(x);
++        x*=3;
++        System.out.println(x);
++        x/=5;
++        System.out.println(x);
++        x-=2;
++        System.out.println(x);
++        x%=4;
++        System.out.println(x);
++
++
++    }
++
++}
++
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 0831d079a73689a19d4b384c1cb1fa97eacb55f0)
++++ .idea/workspace.xml	(revision )
+@@ -1,7 +1,21 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="3dd80c15-7b2c-44ff-aec9-9df3c9ed7a4c" name="Default" comment="" />
++    <list default="true" id="3dd80c15-7b2c-44ff-aec9-9df3c9ed7a4c" name="Default" comment="Wszystko do 5 lekcji">
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CarShop.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Konwersje.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Konwersje2.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Library.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OperacjeNaZmiennych.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OperatoryLogiczne.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OperatoryMatematyczne.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OperatoryPorownania.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OperatorySkrocone.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UpAndDown.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/HelloWorld.class" afterPath="$PROJECT_DIR$/out/production/untitled/HelloWorld.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HelloWorld.java" afterPath="$PROJECT_DIR$/src/HelloWorld.java" />
++    </list>
+     <ignored path="$PROJECT_DIR$/out/" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="TRACKING_ENABLED" value="true" />
+@@ -13,21 +27,101 @@
+   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+   <component name="FileEditorManager">
+     <leaf>
+-      <file leaf-file-name="untitled.iml" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/untitled.iml">
++      <file leaf-file-name="CarShop.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/CarShop.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="0">
+-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++            <state relative-caret-position="136">
++              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="HelloWorld.java" pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/src/HelloWorld.java">
++      <file leaf-file-name="Library.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/Library.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="153">
+-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
++            <state relative-caret-position="340">
++              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="OperatoryMatematyczne.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/OperatoryMatematyczne.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="306">
++              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="OperatorySkrocone.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/OperatorySkrocone.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="272">
++              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="OperatoryPorownania.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/OperatoryPorownania.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="255">
++              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="OperatoryLogiczne.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/OperatoryLogiczne.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="391">
++              <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="UpAndDown.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/UpAndDown.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="204">
++              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="OperacjeNaZmiennych.java" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/src/OperacjeNaZmiennych.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="204">
++              <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="Konwersje.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/Konwersje.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="204">
++              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="Konwersje2.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/Konwersje2.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="323">
++              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+               <folding />
+             </state>
+           </provider>
+@@ -42,6 +136,14 @@
+       </list>
+     </option>
+   </component>
++  <component name="Git.Settings">
++    <option name="PREVIOUS_COMMIT_AUTHORS">
++      <list>
++        <option value="MarcinChorzepa &lt;mchorzepa1@tlen.pl&gt;" />
++      </list>
++    </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="GradleLocalSettings">
+     <option name="externalProjectsViewState">
+       <projects_view />
+@@ -51,6 +153,16 @@
+     <option name="CHANGED_PATHS">
+       <list>
+         <option value="$PROJECT_DIR$/src/HelloWorld.java" />
++        <option value="$PROJECT_DIR$/src/CarShop.java" />
++        <option value="$PROJECT_DIR$/src/Library.java" />
++        <option value="$PROJECT_DIR$/src/OperatoryMatematyczne.java" />
++        <option value="$PROJECT_DIR$/src/OperatorySkrocone.java" />
++        <option value="$PROJECT_DIR$/src/OperatoryPorownania.java" />
++        <option value="$PROJECT_DIR$/src/OperatoryLogiczne.java" />
++        <option value="$PROJECT_DIR$/src/UpAndDown.java" />
++        <option value="$PROJECT_DIR$/src/Konwersje.java" />
++        <option value="$PROJECT_DIR$/src/OperacjeNaZmiennych.java" />
++        <option value="$PROJECT_DIR$/src/Konwersje2.java" />
+       </list>
+     </option>
+   </component>
+@@ -61,10 +173,9 @@
+     <sorting>DEFINITION_ORDER</sorting>
+   </component>
+   <component name="ProjectFrameBounds">
+-    <option name="x" value="-8" />
+-    <option name="y" value="-8" />
+-    <option name="width" value="1936" />
+-    <option name="height" value="1066" />
++    <option name="x" value="-7" />
++    <option name="width" value="974" />
++    <option name="height" value="1057" />
+   </component>
+   <component name="ProjectInspectionProfilesVisibleTreeState">
+     <entry key="Project Default">
+@@ -82,6 +193,9 @@
+       </profile-state>
+     </entry>
+   </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectView">
+     <navigator currentView="ProjectPane" proportions="" version="1">
+       <flattenPackages />
+@@ -112,6 +226,34 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
++          <PATH>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="untitled" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="untitled" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="src" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++          </PATH>
++          <PATH>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="untitled" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="untitled" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value=".idea" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++            </PATH_ELEMENT>
++          </PATH>
+         </subPane>
+       </pane>
+     </panes>
+@@ -121,6 +263,7 @@
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
++    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+   </component>
+   <component name="RunDashboard">
+     <option name="ruleStates">
+@@ -134,10 +277,70 @@
+       </list>
+     </option>
+   </component>
+-  <component name="RunManager" selected="Application.HelloWorld">
+-    <configuration default="false" name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="Application.OperacjeNaZmiennych">
++    <configuration default="false" name="OperatoryLogiczne" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+-      <option name="MAIN_CLASS_NAME" value="HelloWorld" />
++      <option name="MAIN_CLASS_NAME" value="OperatoryLogiczne" />
++      <option name="VM_PARAMETERS" />
++      <option name="PROGRAM_PARAMETERS" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
++      <option name="ALTERNATIVE_JRE_PATH" />
++      <option name="ENABLE_SWING_INSPECTOR" value="false" />
++      <option name="ENV_VARIABLES" />
++      <option name="PASS_PARENT_ENVS" value="true" />
++      <module name="untitled" />
++      <envs />
++      <method />
++    </configuration>
++    <configuration default="false" name="UpAndDown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
++      <option name="MAIN_CLASS_NAME" value="UpAndDown" />
++      <option name="VM_PARAMETERS" />
++      <option name="PROGRAM_PARAMETERS" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
++      <option name="ALTERNATIVE_JRE_PATH" />
++      <option name="ENABLE_SWING_INSPECTOR" value="false" />
++      <option name="ENV_VARIABLES" />
++      <option name="PASS_PARENT_ENVS" value="true" />
++      <module name="untitled" />
++      <envs />
++      <method />
++    </configuration>
++    <configuration default="false" name="Konwersje" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
++      <option name="MAIN_CLASS_NAME" value="Konwersje" />
++      <option name="VM_PARAMETERS" />
++      <option name="PROGRAM_PARAMETERS" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
++      <option name="ALTERNATIVE_JRE_PATH" />
++      <option name="ENABLE_SWING_INSPECTOR" value="false" />
++      <option name="ENV_VARIABLES" />
++      <option name="PASS_PARENT_ENVS" value="true" />
++      <module name="untitled" />
++      <envs />
++      <method />
++    </configuration>
++    <configuration default="false" name="Konwersje2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
++      <option name="MAIN_CLASS_NAME" value="Konwersje2" />
++      <option name="VM_PARAMETERS" />
++      <option name="PROGRAM_PARAMETERS" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
++      <option name="ALTERNATIVE_JRE_PATH" />
++      <option name="ENABLE_SWING_INSPECTOR" value="false" />
++      <option name="ENV_VARIABLES" />
++      <option name="PASS_PARENT_ENVS" value="true" />
++      <module name="untitled" />
++      <envs />
++      <method />
++    </configuration>
++    <configuration default="false" name="OperacjeNaZmiennych" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
++      <option name="MAIN_CLASS_NAME" value="OperacjeNaZmiennych" />
+       <option name="VM_PARAMETERS" />
+       <option name="PROGRAM_PARAMETERS" />
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+@@ -530,12 +733,20 @@
+     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+       <method />
+     </configuration>
+-    <list size="1">
+-      <item index="0" class="java.lang.String" itemvalue="Application.HelloWorld" />
++    <list size="5">
++      <item index="0" class="java.lang.String" itemvalue="Application.OperatoryLogiczne" />
++      <item index="1" class="java.lang.String" itemvalue="Application.UpAndDown" />
++      <item index="2" class="java.lang.String" itemvalue="Application.Konwersje" />
++      <item index="3" class="java.lang.String" itemvalue="Application.Konwersje2" />
++      <item index="4" class="java.lang.String" itemvalue="Application.OperacjeNaZmiennych" />
+     </list>
+     <recent_temporary>
+-      <list size="1">
+-        <item index="0" class="java.lang.String" itemvalue="Application.HelloWorld" />
++      <list size="5">
++        <item index="0" class="java.lang.String" itemvalue="Application.OperacjeNaZmiennych" />
++        <item index="1" class="java.lang.String" itemvalue="Application.Konwersje2" />
++        <item index="2" class="java.lang.String" itemvalue="Application.Konwersje" />
++        <item index="3" class="java.lang.String" itemvalue="Application.UpAndDown" />
++        <item index="4" class="java.lang.String" itemvalue="Application.OperatoryLogiczne" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -549,33 +760,32 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1492792758394</updated>
+-      <workItem from="1492792762983" duration="504000" />
++      <workItem from="1492792762983" duration="7245000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="504000" />
++    <option name="totallyTimeSpent" value="7245000" />
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+-    <editor active="true" />
++    <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
+     <layout>
+       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.50437635" order="-1" side_tool="true" content_ui="tabs" />
+       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07942431" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16301969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+@@ -597,6 +807,10 @@
+   <component name="VcsContentAnnotationSettings">
+     <option name="myLimit" value="2678400000" />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Wszystko do 5 lekcji" />
++    <option name="LAST_COMMIT_MESSAGE" value="Wszystko do 5 lekcji" />
++  </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager />
+     <watches-manager />
+@@ -616,8 +830,88 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/HelloWorld.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="153">
+-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
++        <state relative-caret-position="85">
++          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/CarShop.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="136">
++          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/Library.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="340">
++          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/OperatoryMatematyczne.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="306">
++          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/OperatorySkrocone.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="272">
++          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/OperatoryPorownania.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="255">
++          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/OperatoryLogiczne.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="391">
++          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/Konwersje.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="204">
++          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/UpAndDown.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="204">
++          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/Konwersje2.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="323">
++          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/OperacjeNaZmiennych.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="204">
++          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+           <folding />
+         </state>
+       </provider>
+Index: src/OperatoryMatematyczne.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/OperatoryMatematyczne.java	(revision )
++++ src/OperatoryMatematyczne.java	(revision )
+@@ -0,0 +1,23 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class OperatoryMatematyczne {
++    public static void main(String args[]){
++        int x=10;
++        int y=4;
++        int sum=x+y;
++        int sub=x-y;
++        int multi=x*y;
++        double div=x/y;
++        int mod=x%y;
++        double z=4;
++        double divDouble=x/z;
++        System.out.println(sum);
++        System.out.println(sub);
++        System.out.println(multi);
++        System.out.println(div);
++        System.out.println(divDouble);
++        System.out.println(mod);
++
++    }
++}
+Index: src/OperatoryPorownania.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/OperatoryPorownania.java	(revision )
++++ src/OperatoryPorownania.java	(revision )
+@@ -0,0 +1,19 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class OperatoryPorownania {
++    public static void main(String args[]){
++        int x=5;
++        int y=10;
++        System.out.println("Czy X jest większe od Y?");
++        System.out.println(x>y);
++
++        System.out.println("Czy X jest różny od Y?");
++        System.out.println(x!=y);
++
++        boolean instance="Kasia " instanceof java.lang.String;
++        System.out.println(instance);
++
++
++    }
++}
+Index: src/OperacjeNaZmiennych.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/OperacjeNaZmiennych.java	(revision )
++++ src/OperacjeNaZmiennych.java	(revision )
+@@ -0,0 +1,28 @@
++import java.util.Random;
++
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class OperacjeNaZmiennych {
++    public static void main(String args[]){
++        Random rand=new Random();
++        int x=rand.nextInt(10);
++        int y= new Random().nextInt(10);
++
++        System.out.println(x);
++        System.out.println(y);
++
++        System.out.println("Czy X jest większe od Y?");
++        System.out.println(x>y);
++
++        System.out.println("Czy X pomnożone przez 2 jest większe od Y?");
++        System.out.println(x*2>y);
++
++        System.out.println("Czy Y jest mniejsze od sumy x+3 i jednocześnie większe od x pomniejszonego o 2?");
++        System.out.println(y<x+3 && y>x-2);
++
++        System.out.println("Czy iloczyn liczb X i Y  jest parzysty?");
++        System.out.println(x*y%2==0);
++
++    }
++}
+Index: src/CarShop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/CarShop.java	(revision )
++++ src/CarShop.java	(revision )
+@@ -0,0 +1,21 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class CarShop {
++    public static void main(String args[]){
++        String carBrand="Audi";
++        String carModel="A4";
++        int carYear=2017;
++        double carPrice = 67000.25;
++
++        System.out.println("Wybrany samochód to:");
++        System.out.print(carBrand);
++        System.out.print(" ");
++        System.out.print(carModel);
++        System.out.print(", rocznik ");
++        System.out.print(carYear);
++        System.out.print(", cena ");
++        System.out.print(carPrice);
++        System.out.println("zł");
++    }
++}
+Index: src/Konwersje2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Konwersje2.java	(revision )
++++ src/Konwersje2.java	(revision )
+@@ -0,0 +1,24 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class Konwersje2 {
++    public static void main(String[] args) {
++        char letter1 = 'k';
++        char letter2 = 'o';
++        char letter3 = 't';
++        System.out.println("Błędne \"sumowanie\" znaków");
++        System.out.println(letter1 + letter2 + letter3);
++        System.out.println("Tekst jawny");
++        System.out.println("" + letter1 + letter2 + letter3);
++        letter1++;
++        letter2++;
++        letter3++;
++        System.out.println("Tekst zaszyfrowany");
++        System.out.println("" + letter1 + letter2 + letter3);
++        int x=3;
++        double y=10.22;
++       /// int z=3.5;
++        System.out.println(x>y);
++
++    }
++}
+Index: src/Konwersje.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Konwersje.java	(revision )
++++ src/Konwersje.java	(revision )
+@@ -0,0 +1,16 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class Konwersje {
++    public static void main(String args[]){
++        double number1=10.987;
++        int number2=5;
++
++        int narrowing=(int)number1;
++        double widening=(double)number2;
++        System.out.println("Narrowing: " + narrowing);
++        System.out.println("Widening: " + widening);
++
++
++    }
++}
+Index: src/UpAndDown.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/UpAndDown.java	(revision )
++++ src/UpAndDown.java	(revision )
+@@ -0,0 +1,14 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class UpAndDown {
++    public static void main(String[] args) {
++        int num = 3;
++        //najpierw wyświetla, później zwiększa
++        System.out.println(num++);
++        System.out.println(num);
++        //najpierw zwiększa, później wyświetla
++        System.out.println(++num);
++        System.out.println(num);
++    }
++}
+Index: src/Library.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Library.java	(revision )
++++ src/Library.java	(revision )
+@@ -0,0 +1,24 @@
++/**
++ * Created by Marcin on 21.04.2017.
++ */
++public class Library {
++    public static void main(String args[]){
++        final String appName="Biblioteka v0.1";
++        String title="W pustyni i w puszczy";
++        String author="Henryk Sienkiewicz";
++        int releseDate = 2010;
++        int pages=296;
++        String publisher="Greg";
++        String isbn="978897855548";
++        System.out.print(appName);
++        System.out.println("Książki dostępne w bibliotece");
++        System.out.println(title);
++        System.out.println(author);
++        System.out.println(releseDate);
++        System.out.println(pages);
++        System.out.println(publisher);
++        System.out.println(isbn);
++
++
++    }
++}
+diff --git out/production/untitled/HelloWorld.class out/production/untitled/HelloWorld.class
+index 643843541065eaadd351d7017bc23c19921d976f..5c682b4a862105c6687a1e3bac2cd7ab62c37ae0
+GIT binary patch
+literal 1170
+zc$|GxT~8B16g@+~w##B`p?oOlAPNNw^%IqkqEu0^Q4$D7d>Y!ZZfSR$-K`CM<i+3M
+z&(MdGsPPG2{4@Ro<DI2RjWo2$y?4&JXXc)r-Cuvc{RD6i&vjfxDuQVpJxFPoQTe6{
+zX$`X~&#92na7*Re8t!Pg8ztp^9rJh)!NUk1F@%>)%k;7gfz<R4LojC-B||K4TJlxB
+zx+k4&u~#7^k+%z?vLhT*t=nMG`(U~ZM*fAYRO~mlQz<SIS{0_nFqnFmFN=>NQxR4v
+zv*kIaRa*4V5Kf6y{at7x8>ZZ6VCxJ$HHV5_D$FVsIV!9sL&$TaTTl~qk?UJ_-6_a5
+zQ;iqvj5Viv4J6RdF!aA}wQg35k`9~5HEC<UAuOKe?#bbS+Y~2<vP!FyACgyv+vElo
+zu&BZk!z?#>z0jmK?wZG+dCjp)j;PuVar`OGiQt~ib%I5sC{_$CBde4v48wX(u?@Q{
+zIbA@ZOy~IBihoSEvBGtF7~5h$9l;X=tH?$0)W9>Wk;#rPhIq%#>%Fopcyy<tR+AQS
+zv#BmOa0Y7Ir>8fXT0f80Jo^-47)YIM^f%Z&fB)Qh^gmX%4qQ*ttq1Hn8A_gtOgpnl
+z3XgPBR7ud^1*R9IrdFit=6(m`h|{N|em!97ji5L{s|;mEIW%(w_Qj`@6vI9k#2`iE
+zv;jjHrX0lxF15wKsXId1jgKq`v+<4jVEpBL=sSAe9wCqjwh$U^A)JU%(So)RZZjic
+z0>)a1CUh#2)YqG&hTeqHtufKp?)I6lxS-HjXVgg=2{c9k8Vwnxzm7iiVu}Xeq^gV<
+z9CEL$WXTwfi^~|L96$|YxI+7cVBsn_AyMid$2GFvhxeGEDnvWwaUD1OhcfA(JM|Yq
+CVhN!D
+
