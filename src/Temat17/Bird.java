@@ -6,6 +6,11 @@ package Temat17;
 public class Bird extends Animal{
     @Override
     public void makeSound() {
-        System.out.println("wir ćwir");
+        System.out.println("ćwir ćwir");
+    }
+
+    public void superSound() {
+        super.superSound();
+        System.out.println(" ptak ptak");
     }
 }
