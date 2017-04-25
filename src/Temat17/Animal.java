@@ -9,4 +9,8 @@ public class Animal {
     public void makeSound() {
         System.out.println("bryt bryt");
     }
+
+    public void superSound() {
+        System.out.print("Mój dżwięk: ");
+    }
 }

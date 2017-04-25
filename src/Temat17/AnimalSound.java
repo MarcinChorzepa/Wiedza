@@ -11,5 +11,7 @@ public class AnimalSound {
         animal.makeSound();
         bird.makeSound();
         cat.makeSound();
+
+        bird.superSound();
     }
 }
